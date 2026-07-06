@@ -1,131 +1,200 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joemel Centeno | Portfolio</title>
-    <link rel="stylesheet" href="JDC.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joemel Centeno Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:#1c1c1c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero span{
+    color:orange;
+}
+
+.hero p{
+    margin:20px 0;
+    color:#ccc;
+}
+
+button{
+    padding:12px 30px;
+    border:none;
+    background:orange;
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+section{
+    padding:70px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:orange;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:280px;
+    background:#222;
+    padding:20px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+footer{
+    background:#1c1c1c;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+}
+
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>🏀 My Portfolio</h1>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<h2>🏀 Portfolio</h2>
+
+<nav>
+<a href="#">About</a>
+<a href="#">Projects</a>
+<a href="#">Contact</a>
+</nav>
+
 </header>
 
 <section class="hero">
 
-    <div class="content">
-        <h2><span>Joemel Centeno</span></h2>
+<h1>Hello, I'm <span>Joemel</span></h1>
 
-        <p>
-            BS Computer Science Student<br>
-            Future Web Developer 💻<br>
-            Basketball Lover 🏀
-        </p>
-       <h1> <p>Skills </h1><br>
-HTML        █████ 50%<br>
+<p>BS Computer Science Student | Future Web Developer</p>
 
-CSS         █████ 50%<br>
+<button>View Projects</button>
 
-JavaScript  █████ 50%<br>
+</section>
 
-Python      █████ 50%<br>
+<section>
 
-C++         █████ 50%<br>
+<h2>About Me</h2>
+
+<p style="text-align:center;">
+I'm a Computer Science student who enjoys web development,
+programming, and creating simple modern websites.
 </p>
 
-        <a href="#projects">
-            <button>View Portfolio</button>
-        </a>
-    </div>
+</section>
 
-    <div class="ball">
-        🏀
-    </div>
+<section>
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Portfolio Website</h3>
+<p>Responsive website using HTML and CSS.</p>
+</div>
+
+<div class="card">
+<h3>Healthcare System</h3>
+<p>Hospital management system project.</p>
+</div>
+
+<div class="card">
+<h3>Coming Soon</h3>
+<p>More projects will be added.</p>
+</div>
+
+</div>
 
 </section>
 
-<section id="about">
+<section>
 
-    <h2>About Me</h2>
+<h2>Contact</h2>
 
-    <div class="about-box">
-
-        <p><strong>Name:</strong> Centeno, Joemel D.</p>
-
-        <p><strong>Age:</strong> 22</p>
-
-        <p><strong>Address:</strong> Santa Barbara, Iguig, Cagayan</p>
-
-        <p><strong>Course:</strong> BS Computer Science</p>
-
-        <p>
-            I am a Computer Science student passionate about web development,
-            programming, and creating modern websites.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="projects">
-
-    <h2>Projects</h2>
-
-    <div class="project-container">
-
-        <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Responsive personal portfolio using HTML and CSS.</p>
-        </div>
-
-        <div class="card">
-            <h3>Healthcare System</h3>
-            <p>Soon</p>
-        </div>
-
-        <div class="card">
-            <h3>Coming Soon</h3>
-            <p>More exciting projects will be added.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <h2>Contact Me</h2>
-
-    <div class="contact-box">
-
-        <p>📱 0969-459-8979</p>
-
-        <p>📧 centenojoemeldacalos@email.com</p>
-
-        <p>📍 Santa Barbara, Iguig, Cagayan</p>
-
-    </div>
+<p style="text-align:center;">
+📧 centenojoemeldacalos@email.com<br>
+📱 0969-459-8979
+</p>
 
 </section>
 
 <footer>
 
-    <p>──────────────────────────────
-
-Thanks for Visiting!
-
 © 2026 Joemel Centeno
-
-Made with ❤️ using HTML & CSS
-
-──────────────────────────────</p>
 
 </footer>
 
